@@ -34,7 +34,8 @@ def scrape_all():
     soup = bs(html,"html.parser")
 
     # find the relative image url
-    featured_image_url = soup.find('img', class_='fancybox-image').get('src')
+    img_url_rel = soup.find('img', class_='fancybox-image').get('src')
+    featured_img_url = jpl_image_url + img_url_rel
     
     # Scrape Mars facts -> https://galaxyfacts-mars.com/
     url = 'https://galaxyfacts-mars.com/'
@@ -106,8 +107,8 @@ def scrape_all():
     mars_dict = {
         "news_title": news_title,
         "news_para": news_para,
-        "featured_image_url": featured_image_url,
-        "fact_table": str(fact_table),
+        "featured_img_url": featured_img_url,
+        "fact_table": fact_table,
         "hemisphere_images": hemisphere_img_urls
     }
 
