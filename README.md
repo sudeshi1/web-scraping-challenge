@@ -25,7 +25,7 @@
 
 #### Step 2 - MongoDB and Flask Application
 
-- Utilized MongoDB with Flask templating to create a new HTML webpage that displays scraped information
+- Utilized MongoDB with Flask templating to create a new HTML webpage that displays the scraped information
 
 ## Results ✅
 
