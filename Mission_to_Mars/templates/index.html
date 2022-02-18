@@ -29,13 +29,13 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h2><u>Latest Mars News</u></h2>
+        <h4 class="card-title" id="font">Latest Mars News</h4>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12">
-        <h4>{{mars.news_title}}</h4>
+        <h5 class="media-heading">{{mars.news_title}}</h5>
         <p>{{mars.news_para}}</p>
       </div>
     </div>
@@ -49,7 +49,7 @@
         </div>
         <div class="col-xl-4">
           <div class="row" style="padding-left: 3%" ; id="mars-facts">
-            <h5>Mars Facts</h5>
+            <h4>Mars Facts</h4>
             <div class="table-responsive">
               {{mars.fact_table | safe}}
             </div>
@@ -62,7 +62,7 @@
     <!-- Start Hemispheres Section-->
     <div class="container-fluid">
       <div class="row">
-        <h1 class="text-center">Hemispheres of Mars</h1>
+        <h4 class="text-center">Hemispheres of Mars</h4>
         <hr>
         <br>
         {% for hemisphere in mars.hemisphere_images %}
@@ -70,7 +70,7 @@
           <div class="card text-center" style="width: auto; height: auto;">
             <img class="card-img-top text-center" id="scale_id" src="{{hemisphere.image_url}}">
             <div class="card-body text-center">
-              <h4 class="card-title text-left" style="height: max-content;">{{ hemisphere.title }}</h4>
+              <h5 class="card-title text-left" style="height: max-content;">{{ hemisphere.title }}</h5>
             </div>
           </div>
         </div>
