@@ -1,6 +1,6 @@
 # Web Scraping Challenge - Mission To Mars 👩🏻‍🚀
 
-## Background 
+## Background 🌎
 
 - Build a web application that scrapes various websites for data related to the Mission to Mars 
 - Displays the information in a single HTML webpage
@@ -17,7 +17,7 @@
 
 ![Coding](/Mission_to_Mars/images/2.gif)
 
-## Accomplishments
+## Accomplishments 🎯
 
 #### Step 1 - Scraping
 
