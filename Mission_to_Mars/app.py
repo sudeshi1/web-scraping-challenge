@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
-import scrape_mars
+import scrape
 
 app = Flask(__name__)
 
@@ -12,12 +12,12 @@ mars_db = mongo.db.mars
 @app.route("/")
 def home():
     scraped_data = mars_db.find_one()
-    ##print(mars_dict)
+    #print(scraped_data["hemisphere_images"])
     return render_template("index.html", mars = scraped_data)
 
 @app.route("/scrape")
 def scrape_all():
-    mars_dict = scrape_mars.scrape_all()
+    mars_dict = scrape.scrape_all()
     ##mars_dict.insert_one(mars_data)
     mars_db.update_one({}, {"$set": mars_dict}, upsert=True)
     return redirect("/", code = 302)
