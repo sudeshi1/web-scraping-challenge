@@ -64,18 +64,18 @@
       <div class="row">
         <h4 class="text-center">Hemispheres of Mars</h4>
         <hr>
-        <br>
-        {% for hemisphere in mars.hemisphere_images %}
-        <div class="col-md-3 text-center">
-          <div class="card text-center" style="width: auto; height: auto;">
-            <img class="card-img-top text-center" id="scale_id" src="{{hemisphere.image_url}}">
-            <div class="card-body text-center">
-              <h5 class="card-title text-left" style="height: max-content;">{{ hemisphere.title }}</h5>
-            </div>
+      </div>
+      <br>
+      {% for hemisphere in mars.hemisphere_images %}
+      <div class="col-md-3 text-center">
+        <div class="card text-center" style="width: auto; height: auto;">
+          <img class="card-img-top text-center" id="scale_id" src="{{hemisphere.image_url}}">
+          <div class="card-body text-center">
+            <h5 class="card-title text-left" style="height: max-content;">{{ hemisphere.title }}</h5>
           </div>
         </div>
-        {% endfor %}
       </div>
+      {% endfor %}
     </div>
 
 
