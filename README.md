@@ -29,4 +29,4 @@
 
 ## Results ✅
 
-![Final HTML](/Mission_to_Mars/images/3.jpg)
+![HTML Webpage](/Mission_to_Mars/images/3.jpg)
